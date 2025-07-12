@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R‑LUX | Relógios Elegantes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ouro-luxuoso: #D4AF37;
+      --preto-classico: #000000;
+      --cinza-carvao: #333333;
+      --branco-gelo: #F5F5F5;
+      --champanhe-suave: #EFE1C6;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--branco-gelo);
+      color: var(--cinza-carvao);
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: var(--preto-classico);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      color: var(--ouro-luxuoso);
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--champanhe-suave);
+      font-weight: 500;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .banner {
+      text-align: center;
+      background-color: var(--champanhe-suave);
+      padding: 80px 20px;
+    }
+    .banner h2 {
+      font-size: 2.5em;
+      color: var(--preto-classico);
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .produto {
+      border: 1px solid var(--cinza-carvao);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .produto img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .btn-comprar {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: var(--ouro-luxuoso);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--preto-classico);
+      font-weight: 600;
+    }
+    footer {
+      background-color: var(--preto-classico);
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--champanhe-suave);
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid var(--cinza-carvao);
+      border-radius: 8px;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 24px;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>R‑LUX</h1>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#promocoes">Promoções</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>  <section class="banner">
+    <h2>Descubra a elegância no seu tempo</h2>
+    <p>Relógios que combinam estilo e sofisticação</p>
+  </section>  <section id="produtos">
+    <h2>Produtos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/250" alt="Relógio 1">
+        <h3>Relógio Clássico</h3>
+        <p>R$ 199,90</p>
+        <a href="https://wa.me/55119952066088" class="btn-comprar">Comprar</a>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/250" alt="Relógio 2">
+        <h3>Relógio Moderno</h3>
+        <p>R$ 249,90</p>
+        <a href="https://wa.me/55119952066088" class="btn-comprar">Comprar</a>
+      </div>
+    </div>
+  </section>  <section id="sobre">
+    <h2>Sobre a R‑LUX</h2>
+    <p>Somos apaixonados por estilo, elegância e pontualidade. Nossa missão é oferecer relógios que complementam sua personalidade com sofisticação e bom gosto.</p>
+  </section>  <section id="promocoes">
+    <h2>Promoções</h2>
+    <p>Aproveite os descontos da semana e condições especiais no WhatsApp!</p>
+    <p><strong>Relógio Clássico</strong> com 20% OFF até domingo!</p>
+  </section>  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form action="https://formsubmit.co/yuricampanelli5@gmail.com" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="btn-comprar">Enviar</button>
+    </form>
+  </section>  <footer>
+    <p>&copy; 2025 R‑LUX. Todos os direitos reservados.</p>
+  </footer><a href="https://wa.me/55119952066088" class="whatsapp-btn" target="_blank">💬</a>
+
+</body>
+</html>
